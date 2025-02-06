@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(147, 233, 236);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.error{
+  color: red;
+}
+
+.my-navbar{
+  height: 50px;
+  background-color: rgb(70, 172, 167);
+}
+
+.full-height{
+  /* height: clamp(calc(100% + calc(100dvh - 50px)), calc(100dvh - 50px), calc(calc(100dvh - 50px) + 100%)); */
+  height: calc(100dvh - 50px);
+}
+
+button{
+  padding: 3px;
+}
+
+a:hover{
+  background-color: rgb(55, 134, 130);
+}

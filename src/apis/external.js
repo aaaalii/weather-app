@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5',
+    baseURL: 'https://api.openweathermap.org/data/2.5',
     withCredentials: true,
     headers: {
       "Content-Type": "application/json",
@@ -14,7 +14,7 @@ export const getCityData = async cityName => {
   let response;
 
   try{
-    response = await api.get(`weather?q=${cityName}&appid=${API_KEY}`);
+    response = await api.get(`forecast?q=${cityName}&appid=${API_KEY}&units=metric&cnt=5`);
   } catch (err){
     return err;
   }
